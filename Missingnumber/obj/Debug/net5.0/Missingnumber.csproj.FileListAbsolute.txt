@@ -1,0 +1,16 @@
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\bin\Debug\net5.0\Missingnumber.exe
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\bin\Debug\net5.0\Missingnumber.deps.json
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\bin\Debug\net5.0\Missingnumber.runtimeconfig.json
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\bin\Debug\net5.0\Missingnumber.runtimeconfig.dev.json
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\bin\Debug\net5.0\Missingnumber.dll
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\bin\Debug\net5.0\ref\Missingnumber.dll
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\bin\Debug\net5.0\Missingnumber.pdb
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\obj\Debug\net5.0\Missingnumber.csprojAssemblyReference.cache
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\obj\Debug\net5.0\Missingnumber.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\obj\Debug\net5.0\Missingnumber.AssemblyInfoInputs.cache
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\obj\Debug\net5.0\Missingnumber.AssemblyInfo.cs
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\obj\Debug\net5.0\Missingnumber.csproj.CoreCompileInputs.cache
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\obj\Debug\net5.0\Missingnumber.dll
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\obj\Debug\net5.0\ref\Missingnumber.dll
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\obj\Debug\net5.0\Missingnumber.pdb
+C:\Users\Abdul MS\Desktop\Aspindia\Missingnumber\obj\Debug\net5.0\Missingnumber.genruntimeconfig.cache
