@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+		
+		<title>Review</title>
+		<link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
+		<link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+	
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="star.css">
+		
+	</head>
+
+
+	<body>
+		
+
+		<div id="site-content" style="font-family:Poppins-Medium">
+			<header class="site-header">
+				<div class="container">
+					<a href="index.html" id="branding">
+						<img src="images/logo@2x.png" alt="" class="logo">
+						<div class="logo-copy">
+							<h1 class="site-title">MOVIES TIME</h1>
+							<small class="site-description">We are here for you</small>
+						</div>
+					</a> 
+
+
+					
+				</div>
+			</header>
+			<main class="main-content">
+				<div class="container">
+					<div class="page">
+						
+						<div class="content">
+							<div class="row">
+								<div class="col-md-6">
+									<figure class="movie-poster"><img src="dummy/thumb-8.jpg" alt="#"></figure>
+								</div>
+								<div class="col-md-6">
+									<h2 class="movie-title">The Colony</h2>
+									<div class="movie-summary">
+										<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>
+
+										<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit sed.</p>
+									</div>
+									<ul class="movie-meta">
+										<li><strong>Rating: 8.2/10</strong> 
+										<!--	<div class="star-rating" title="Rated 4.00 out of 5"><span style="width:80%"><strong class="rating">4.00</strong> out of 5</span></div>-->
+										</li>
+										<li><strong>Length:</strong> 98 min</li>
+										<li><strong>Premiere:</strong> 22 March 2013 (USA)</li>
+										<li><strong>Category:</strong> Animation/Adventure/Comedy</li>
+									</ul>
+
+									<ul class="starring">
+										<li><strong>Directors:</strong> Kirk de Mico (as Kirk DeMico). Chris Sanders</li>
+										<li><strong>Writers:</strong> Chris Sanders (screenplay), Kirk De Micco (screenplay)</li>
+										<li><strong>Stars:</strong> Nicolas Cage, Ryan Reynolds, Emma Stone</li>
+									</ul>
+								</div>
+							</div> <!-- .row -->
+							<div class="entry-content">
+								<form id="myform" type="post">
+  <fieldset>
+    <legend>Review Form </legend>
+    
+    <div class="singlerow">
+      <label for="name">Name :</label>
+      <input   type="text"  name="name"    />
+    </div>
+	 <div class="singlerow">
+      <label for="email">Email:</label>
+      <input  type="email"  id="email" name="email"  />
+    </div>	
+	<div class="singlerow">
+      <label for="rating">Rating:</label>
+      <input  type="number"  id="rating" name="rating" min="0" max="10" />
+    </div>	
+	
+   
+    <div class="submit">
+       <input type="submit" id="btn" name="btn" class="btn" value="Submit" />
+    </div>
+	  </fieldset>
+</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+
+
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/app.js"></script>
+	
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+  $(document).ready(function() {
+  $("#btn").click(function(e){
+	 var jsonData = {};
+	 
+   var formData = $("#myform").serializeArray();
+  // console.log(formData);
+   
+   $.each(formData, function() {
+        if (jsonData[this.name]) {
+           if (!jsonData[this.name].push) {
+               jsonData[this.name] = [jsonData[this.name]];
+           }
+           jsonData[this.name].push(this.value || '');
+       } else {
+           jsonData[this.name] = this.value || '';
+       }
+	       
+	   
+   });
+   console.log(jsonData);
+	$.ajax(
+	{
+		url : "action.php",
+		type: "POST",
+		data : jsonData,
+		
+	});
+    e.preventDefault();	
+});
+});
+</script>
+	</body>
+
+</html>
